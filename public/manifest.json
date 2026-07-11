@@ -1,0 +1,18 @@
+{
+  "name": "MudraMind Wellness",
+  "short_name": "MudraMind",
+  "description": "Clean, calming yoga mudra hand exercises to support focus, respiration, and mindfulness breaks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafbfa",
+  "theme_color": "#5b7c69",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

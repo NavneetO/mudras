@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
+@theme {
+  --color-sage-50: #f4f7f5;
+  --color-sage-100: #e8efea;
+  --color-sage-200: #d1dfd6;
+  --color-sage-300: #adc7b8;
+  --color-sage-400: #82a893;
+  --color-sage-500: #5b7c69;
+  --color-sage-600: #466151;
+  --color-sage-700: #384e41;
+  --color-sage-800: #2d3e34;
+  --color-sage-900: #26342b;
+
+  --color-sky-50: #f2f7f9;
+  --color-sky-100: #e6f0f4;
+  --color-sky-200: #d0e3ec;
+  --color-sky-300: #adcce0;
+  --color-sky-400: #7eb0cc;
+  --color-sky-500: #5b9cbf;
+  --color-sky-600: #477ea0;
+  --color-sky-700: #3b6682;
+  --color-sky-800: #33556d;
+  --color-sky-900: #2f495c;
+
+  --color-accent-amber: #e5a93c;
+  --color-accent-amber-dark: #b8801b;
+
+  --color-wellness-bg: var(--background);
+  --color-wellness-fg: var(--foreground);
+  --color-glass-bg: var(--glass-bg);
+  --color-glass-border: var(--glass-border);
+
+  --font-sans: 'Outfit', 'Inter', var(--font-outfit), var(--font-inter), sans-serif;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafbfa;
+  --foreground: #202b25;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(91, 124, 105, 0.12);
+  --font-outfit: 'Outfit';
+  --font-inter: 'Inter';
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Supports manual toggle via .dark class or system prefers-color-scheme if no manual override is active */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light) {
+    --background: #0f1613;
+    --foreground: #e6eae7;
+    --glass-bg: rgba(18, 26, 22, 0.7);
+    --glass-border: rgba(136, 178, 156, 0.15);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.dark {
+  --background: #0f1613;
+  --foreground: #e6eae7;
+  --glass-bg: rgba(18, 26, 22, 0.7);
+  --glass-border: rgba(136, 178, 156, 0.15);
 }
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism class helper */
+.glass-effect {
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-effect-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-effect-hover:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px -10px rgba(91, 124, 105, 0.15);
+  transform: translateY(-2px);
+}
+
+.dark .glass-effect-hover:hover {
+  background-color: rgba(25, 34, 30, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-400);
+}
+
+/* Keyframes */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 4px rgba(91, 124, 105, 0.2), 0 0 10px rgba(91, 124, 105, 0.1);
+  }
+  to {
+    text-shadow: 0 0 8px rgba(91, 124, 105, 0.4), 0 0 20px rgba(91, 124, 105, 0.2);
+  }
+}
+
