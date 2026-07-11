@@ -199,5 +199,194 @@ export const mudrasData: Mudra[] = [
       'Sethi, A., et al. (2013). Efficacy of acupressure and touch therapy in reducing anxiety. American Journal of Nursing.'
     ],
     related: ['apana', 'gyan']
+  },
+  {
+    id: 'hakini',
+    name: 'Hakini Mudra',
+    sanskrit: 'हाकिनी मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Focus', 'Breathing'],
+    steps: [
+      'Touch all fingertips together.',
+      'Keep palms apart.',
+      'Relax shoulders.',
+      'Breathe deeply for 3–5 minutes.'
+    ],
+    evidence: 'Preliminary',
+    benefits: [
+      'May improve concentration during focused work.',
+      'Encourages slower, more deliberate breathing.',
+      'Can serve as a mindful pause before studying or presentations.'
+    ],
+    bestTime: 'Before studying or demanding cognitive tasks.',
+    traditionalClaims: 'Traditionally associated with the sixth chakra (Ajna) to balance the left and right brain hemispheres.',
+    scientificEvidence: 'Preliminary evidence mostly based on mindfulness practice and traditional use, focusing on its role in concentration.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'shuni',
+    name: 'Shuni Mudra',
+    sanskrit: 'शुनि मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Relaxation', 'Meditation'],
+    steps: [
+      'Touch middle finger to thumb.',
+      'Keep remaining fingers relaxed.',
+      'Breathe slowly.'
+    ],
+    evidence: 'Traditional Claim',
+    benefits: [
+      'May encourage emotional balance.',
+      'Useful during meditation.',
+      'Can reduce restless hand movements by giving the hands a purposeful position.'
+    ],
+    bestTime: 'During meditation or when feeling restless.',
+    traditionalClaims: 'Traditionally called the "Seal of Patience," it is believed to encourage discipline, patience, and commitment.',
+    scientificEvidence: 'Traditional use with limited direct research.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'surya',
+    name: 'Surya Mudra',
+    sanskrit: 'सूर्य मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Focus'],
+    steps: [
+      'Fold ring finger to thumb.',
+      'Apply gentle pressure.'
+    ],
+    evidence: 'Traditional Claim',
+    benefits: [
+      'Traditionally associated with vitality.',
+      'May help users feel more alert during short mindfulness breaks.',
+      'Often practiced before yoga sessions.'
+    ],
+    bestTime: 'Early morning or before a yoga session.',
+    traditionalClaims: 'Traditionally associated with the sun (Surya) and believed to increase fire element in the body. Avoid claims about metabolism or weight loss.',
+    scientificEvidence: 'Traditional use; claims about metabolism or weight loss are not scientifically supported.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'varun',
+    name: 'Varun Mudra',
+    sanskrit: 'वरुण मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Relaxation', 'Breathing'],
+    steps: [
+      'Little finger touches thumb.',
+      'Other fingers remain straight.'
+    ],
+    evidence: 'Traditional Claim',
+    benefits: [
+      'Gentle hand posture that promotes mindful breathing.',
+      'Can be used during relaxation exercises.',
+      'Encourages body awareness.'
+    ],
+    bestTime: 'During relaxation exercises.',
+    traditionalClaims: 'Associated with the water element, believed to balance water content in the body and enhance beauty.',
+    scientificEvidence: 'Traditional use.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'rudra',
+    name: 'Rudra Mudra',
+    sanskrit: 'रुद्र मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Focus'],
+    steps: [
+      'Thumb touches index and ring finger.',
+      'Keep the middle and little fingers extended.'
+    ],
+    evidence: 'Traditional Claim',
+    benefits: [
+      'Can be paired with breathing exercises.',
+      'May help users settle before demanding cognitive tasks.',
+      'Useful as a mindfulness cue.'
+    ],
+    bestTime: 'Before demanding cognitive tasks.',
+    traditionalClaims: 'Named after Lord Shiva, this mudra is believed to strengthen the earth and air elements in the body, promoting clarity.',
+    scientificEvidence: 'Traditional use.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'kubera',
+    name: 'Kubera Mudra',
+    sanskrit: 'कुबेर मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Focus', 'Meditation'],
+    steps: [
+      'Touch the tips of your thumb, index finger, and middle finger together.',
+      'Bend the other two fingers into the palm.'
+    ],
+    evidence: 'Traditional Claim',
+    benefits: [
+      'Useful as a symbolic gesture during visualization or goal-setting exercises.',
+      'Can reinforce intention and mindful planning.',
+      'May improve focus when paired with deliberate breathing.'
+    ],
+    bestTime: 'During visualization or goal-setting exercises.',
+    traditionalClaims: 'Dedicated to Kubera, the god of wealth. Used as a symbolic gesture for manifesting desires and intentions.',
+    scientificEvidence: 'Traditional symbolic use.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'brahma',
+    name: 'Brahma Mudra',
+    sanskrit: 'ब्रह्म मुद्रा',
+    difficulty: 'Beginner',
+    duration: 5,
+    categories: ['Breathing'],
+    steps: [
+      'Close both fists.',
+      'Place thumbs inside.',
+      'Hold near lower abdomen.'
+    ],
+    evidence: 'Moderate',
+    benefits: [
+      'Commonly paired with deep breathing.',
+      'Encourages diaphragmatic breathing.',
+      'May promote relaxation.'
+    ],
+    bestTime: 'During breathing exercises.',
+    traditionalClaims: 'Named after the creator Brahma, it is used to stimulate full yogic breathing and revitalize the nervous system.',
+    scientificEvidence: 'Moderate evidence for the breathing exercises it is paired with; encourages diaphragmatic breathing which promotes relaxation.',
+    citations: [],
+    related: []
+  },
+  {
+    id: 'kalesvara',
+    name: 'Kalesvara Mudra',
+    sanskrit: 'कालेश्वर मुद्रा',
+    difficulty: 'Intermediate',
+    duration: 10,
+    categories: ['Stress Management'],
+    steps: [
+      'Touch middle fingers together.',
+      'Touch thumbs together.',
+      'Fold remaining fingers inward.'
+    ],
+    evidence: 'Preliminary',
+    benefits: [
+      'Encourages slower breathing.',
+      'May reduce racing thoughts during mindfulness practice.',
+      'Useful before stressful situations.'
+    ],
+    bestTime: 'Before stressful situations or during mindfulness practice.',
+    traditionalClaims: 'Dedicated to the deity of time. Believed to calm agitated thoughts and improve focus on the present moment.',
+    scientificEvidence: 'Preliminary evidence suggests it may help reduce racing thoughts and encourage slower breathing.',
+    citations: [],
+    related: []
   }
 ];
