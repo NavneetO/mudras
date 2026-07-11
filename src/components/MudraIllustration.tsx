@@ -175,6 +175,83 @@ export const MudraIllustration: React.FC<MudraIllustrationProps> = ({ id, classN
           </svg>
         );
 
+      case 'shuni':
+        return (
+          <svg viewBox="0 0 200 200" className="w-full h-full text-sage-500 fill-none stroke-current" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M 60,160 Q 60,110 75,90" />
+            <path d="M 140,160 Q 140,120 130,105" />
+            <path d="M 75,90 Q 72,55 70,30 Q 77,22 84,28 Q 90,34 89,80" /> {/* Index Ext */}
+            <path d="M 85,82 Q 95,102 98,110 C 95,118 84,110 88,98" /> {/* Mid Bent */}
+            <path d="M 108,80 Q 118,50 119,28 Q 126,20 132,26 Q 136,32 126,84" /> {/* Ring Ext */}
+            <path d="M 130,105 Q 148,80 150,50 Q 148,42 140,48 Q 132,54 123,88" /> {/* Pinky Ext */}
+            <path d="M 58,118 Q 75,124 93,115 Q 98,111 99,105" /> {/* Thumb */}
+            <circle cx="98" cy="109" r="8" className="fill-sky-400/20 stroke-sky-400 stroke-[1.5] animate-pulse-slow" />
+            <circle cx="98" cy="109" r="2.5" className="fill-sky-400 stroke-none" />
+          </svg>
+        );
+
+      case 'surya':
+        return (
+          <svg viewBox="0 0 200 200" className="w-full h-full text-sage-500 fill-none stroke-current" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M 60,160 Q 60,110 75,90" />
+            <path d="M 140,160 Q 140,120 130,105" />
+            <path d="M 75,90 Q 72,55 70,30 Q 77,22 84,28 Q 90,34 89,80" /> {/* Index Ext */}
+            <path d="M 89,80 Q 94,52 95,27 Q 102,20 109,26 Q 114,32 108,82" /> {/* Mid Ext */}
+            <path d="M 108,82 Q 120,95 110,110 C 100,120 94,106 100,98" /> {/* Ring Bent */}
+            <path d="M 130,105 Q 148,80 150,50 Q 148,42 140,48 Q 132,54 123,88" /> {/* Pinky Ext */}
+            <path d="M 58,118 Q 75,124 93,115 Q 98,111 99,105" /> {/* Thumb */}
+            <circle cx="103" cy="101" r="8" className="fill-sky-400/20 stroke-sky-400 stroke-[1.5] animate-pulse-slow" />
+            <circle cx="103" cy="101" r="2.5" className="fill-sky-400 stroke-none" />
+          </svg>
+        );
+
+      case 'varun':
+        return (
+          <svg viewBox="0 0 200 200" className="w-full h-full text-sage-500 fill-none stroke-current" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M 60,160 Q 60,110 75,90" />
+            <path d="M 140,160 Q 140,120 130,105" />
+            <path d="M 75,90 Q 72,55 70,30 Q 77,22 84,28 Q 90,34 89,80" /> {/* Index Ext */}
+            <path d="M 89,80 Q 94,52 95,27 Q 102,20 109,26 Q 114,32 108,82" /> {/* Mid Ext */}
+            <path d="M 108,80 Q 118,50 119,28 Q 126,20 132,26 Q 136,32 126,84" /> {/* Ring Ext */}
+            <path d="M 130,105 Q 135,115 125,120 C 114,124 106,112 112,104" /> {/* Pinky Bent */}
+            <path d="M 58,118 Q 75,122 92,112 Q 102,106 105,98" /> {/* Thumb */}
+            <circle cx="103" cy="101" r="8" className="fill-sky-400/20 stroke-sky-400 stroke-[1.5] animate-pulse-slow" />
+            <circle cx="103" cy="101" r="2.5" className="fill-sky-400 stroke-none" />
+          </svg>
+        );
+
+      case 'rudra':
+        return (
+          <svg viewBox="0 0 200 200" className="w-full h-full text-sage-500 fill-none stroke-current" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M 60,160 Q 60,110 75,90" />
+            <path d="M 140,160 Q 140,120 130,105" />
+            <path d="M 75,90 Q 65,100 68,115 C 72,122 84,115 82,105" /> {/* Index Bent */}
+            <path d="M 89,80 Q 94,52 95,27 Q 102,20 109,26 Q 114,32 108,82" /> {/* Mid Ext */}
+            <path d="M 108,82 Q 120,95 110,110 C 100,120 94,106 100,98" /> {/* Ring Bent */}
+            <path d="M 130,105 Q 148,80 150,50 Q 148,42 140,48 Q 132,54 123,88" /> {/* Pinky Ext */}
+            <path d="M 58,118 Q 75,124 93,115 Q 98,111 99,105" /> {/* Thumb */}
+            <circle cx="98" cy="109" r="8" className="fill-sky-400/20 stroke-sky-400 stroke-[1.5] animate-pulse-slow" />
+            <circle cx="98" cy="109" r="2.5" className="fill-sky-400 stroke-none" />
+          </svg>
+        );
+
+      case 'kubera':
+      case 'hakini':
+      case 'brahma':
+      case 'kalesvara':
+        // Fallback for complex two-handed mudras, reuse dhyana/anjali style or abstract hands
+        return (
+          <svg viewBox="0 0 200 200" className="w-full h-full text-sage-500 fill-none stroke-current" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            {/* Generic symmetrical abstract representing these mudras */}
+            <path d="M 65,160 C 65,130 70,110 80,90 Q 85,70 85,40 C 85,35 90,32 94,35 C 98,38 98,42 98,90" />
+            <path d="M 135,160 C 135,130 130,110 120,90 Q 115,70 115,40 C 115,35 110,32 106,35 C 102,38 102,42 102,90" />
+            <path d="M 50,150 Q 58,125 72,110" strokeDasharray="3 3" className="stroke-sage-300" />
+            <path d="M 150,150 Q 142,125 128,110" strokeDasharray="3 3" className="stroke-sage-300" />
+            <circle cx="100" cy="90" r="10" className="fill-sky-400/10 stroke-sky-400/30 stroke-[1] animate-pulse-slow" />
+            <circle cx="100" cy="90" r="4" className="fill-sky-400 stroke-none" />
+          </svg>
+        );
+
       default:
         // Placeholder/Default hand icon
         return (

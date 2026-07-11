@@ -14,6 +14,12 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export function generateStaticParams() {
+  return mudrasData.map((mudra) => ({
+    slug: mudra.id,
+  }));
+}
+
 export default function MudraDetailPage({ params }: PageProps) {
   const { slug } = use(params);
   const { isBookmarked, toggleBookmark } = useMudra();
